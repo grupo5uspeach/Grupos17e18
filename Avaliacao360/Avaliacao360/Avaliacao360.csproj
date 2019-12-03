@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F16BAEC6-B05C-42BD-B18C-C014201CCE4D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Avaliacao360</RootNamespace>
+    <AssemblyName>Avaliacao360</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Avaliacao 360</ProductName>
+    <PublisherName>EACH - USP</PublisherName>
+    <SuiteName>Avaliacao360</SuiteName>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C377CF9B31A783972E0BA7EE755014804833A04B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Avaliacao360_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmCancelar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCancelar.Designer.cs">
+      <DependentUpon>frmCancelar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCorporativo5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCorporativo5.Designer.cs">
+      <DependentUpon>frmCorporativo5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCorporativo4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCorporativo4.Designer.cs">
+      <DependentUpon>frmCorporativo4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCorporativo3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCorporativo3.Designer.cs">
+      <DependentUpon>frmCorporativo3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCorporativo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCorporativo2.Designer.cs">
+      <DependentUpon>frmCorporativo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCorporativo1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCorporativo1.Designer.cs">
+      <DependentUpon>frmCorporativo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColaborativo6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColaborativo6.Designer.cs">
+      <DependentUpon>frmColaborativo6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColaborativo5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColaborativo5.Designer.cs">
+      <DependentUpon>frmColaborativo5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColaborativo4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColaborativo4.Designer.cs">
+      <DependentUpon>frmColaborativo4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColaborativo3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColaborativo3.Designer.cs">
+      <DependentUpon>frmColaborativo3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColaborativo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColaborativo2.Designer.cs">
+      <DependentUpon>frmColaborativo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDescartar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDescartar.Designer.cs">
+      <DependentUpon>frmDescartar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEscolhaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEscolhaFuncionario.Designer.cs">
+      <DependentUpon>frmEscolhaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEsqueciMinhaSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEsqueciMinhaSenha.Designer.cs">
+      <DependentUpon>frmEsqueciMinhaSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFimAvaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFimAvaliacao.Designer.cs">
+      <DependentUpon>frmFimAvaliacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIniciarAvaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIniciarAvaliacao.Designer.cs">
+      <DependentUpon>frmIniciarAvaliacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPopupSalvar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPopupSalvar.Designer.cs">
+      <DependentUpon>frmPopupSalvar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRetomarAvaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRetomarAvaliacao.Designer.cs">
+      <DependentUpon>frmRetomarAvaliacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImprimir.Designer.cs">
+      <DependentUpon>frmImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalvar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalvar.Designer.cs">
+      <DependentUpon>frmSalvar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmColaborativo1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmColaborativo1.Designer.cs">
+      <DependentUpon>frmColaborativo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnico5 .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTecnico5 .Designer.cs">
+      <DependentUpon>frmTecnico5 .cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnico4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTecnico4.Designer.cs">
+      <DependentUpon>frmTecnico4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnico3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTecnico3.Designer.cs">
+      <DependentUpon>frmTecnico3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnico2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTecnico2.Designer.cs">
+      <DependentUpon>frmTecnico2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTecnico1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTecnico1.Designer.cs">
+      <DependentUpon>frmTecnico1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTelaImpressao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTelaImpressao.Designer.cs">
+      <DependentUpon>frmTelaImpressao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTermoAceite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTermoAceite.Designer.cs">
+      <DependentUpon>frmTermoAceite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmCancelar.resx">
+      <DependentUpon>frmCancelar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCorporativo5.resx">
+      <DependentUpon>frmCorporativo5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCorporativo4.resx">
+      <DependentUpon>frmCorporativo4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCorporativo3.resx">
+      <DependentUpon>frmCorporativo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCorporativo2.resx">
+      <DependentUpon>frmCorporativo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCorporativo1.resx">
+      <DependentUpon>frmCorporativo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColaborativo6.resx">
+      <DependentUpon>frmColaborativo6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColaborativo5.resx">
+      <DependentUpon>frmColaborativo5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColaborativo4.resx">
+      <DependentUpon>frmColaborativo4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColaborativo3.resx">
+      <DependentUpon>frmColaborativo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColaborativo2.resx">
+      <DependentUpon>frmColaborativo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDescartar.resx">
+      <DependentUpon>frmDescartar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEscolhaFuncionario.resx">
+      <DependentUpon>frmEscolhaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEsqueciMinhaSenha.resx">
+      <DependentUpon>frmEsqueciMinhaSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFimAvaliacao.resx">
+      <DependentUpon>frmFimAvaliacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIniciarAvaliacao.resx">
+      <DependentUpon>frmIniciarAvaliacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPopupSalvar.resx">
+      <DependentUpon>frmPopupSalvar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRetomarAvaliacao.resx">
+      <DependentUpon>frmRetomarAvaliacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImprimir.resx">
+      <DependentUpon>frmImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalvar.resx">
+      <DependentUpon>frmSalvar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmColaborativo1.resx">
+      <DependentUpon>frmColaborativo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnico5 .resx">
+      <DependentUpon>frmTecnico5 .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnico4.resx">
+      <DependentUpon>frmTecnico4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnico3.resx">
+      <DependentUpon>frmTecnico3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnico2.resx">
+      <DependentUpon>frmTecnico2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTecnico1.resx">
+      <DependentUpon>frmTecnico1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTelaImpressao.resx">
+      <DependentUpon>frmTelaImpressao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTermoAceite.resx">
+      <DependentUpon>frmTermoAceite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Avaliacao360_TemporaryKey.pfx" />
+    <Content Include="ExemploReport\Exemplo.pdf" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Avaliacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
